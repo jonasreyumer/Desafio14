@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("imgs/back.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.8;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.navbar {
+  padding: 0; }
+  .navbar .row {
+    width: 100%; }
+    .navbar .row .toplogo {
+      font-family: "Bebas Neue", cursive;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      color: #232727;
+      width: 100%;
+      text-align: center; }
+      .navbar .row .toplogo #logo {
+        font-weight: 500;
+        font-size: 100px;
+        padding: 0;
+        margin: 0; }
+
+.slogan {
+  color: #232727;
+  font-family: "Bebas Neue", cursive;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 50px; }
+
+.block {
+  padding: 0;
+  margin: 0;
+  padding-top: 50px; }
+  .block .block-element {
+    display: flex;
+    justify-content: center; }
+    .block .block-element img {
+      height: 457px;
+      object-fit: cover; }
+
+.carousel {
+  width: 70%; }
+
+.carousel-caption {
+  font-family: 'Baloo Tammudu 2', cursive;
+  background-color: #5bd165; }
+
+.contact-form {
+  padding: 50px;
+  margin: 30px auto; }
+  .contact-form h1 {
+    font-size: 42px;
+    font-family: 'Pacifico', sans-serif;
+    margin: 0 0 50px;
+    text-align: center; }
+  .contact-form .form-group {
+    margin-bottom: 20px; }
+  .contact-form .form-control, .contact-form .btn {
+    min-height: 38px;
+    border-radius: 2px; }
+  .contact-form .form-control {
+    border-color: greenyellow; }
+    .contact-form .form-control:focus {
+      border-color: greenyellow;
+      box-shadow: 0 0 8px greenyellow; }
+  .contact-form .btn-success {
+    min-width: 250px;
+    color: white;
+    margin-top: 20px;
+    border: none; }
+    .contact-form .btn-success:hover {
+      color: black; }
+    .contact-form .btn-success i {
+      margin-right: 5px; }
+  .contact-form label {
+    opacity: 0.9; }
+  .contact-form textarea {
+    resize: vertical; }
+
+@media (max-width: 600px) and (min-width: 300px) {
+  #logo {
+    font-size: 40px; }
+  .slogan {
+    font-size: 30px; } }

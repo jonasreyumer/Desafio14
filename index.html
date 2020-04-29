@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Chía Veggie Shop</title>
+  <meta charset="UTF-8">
+	<meta name="description" content="Chía Get Greener">
+	<meta name="keywords" content="organico,veggie,bolson,delivery,alimentacion,saludable">
+	<meta name="author" content="Jonas Rey">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2|Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg" id="header">
+        <div class="row">
+          <div class="col-sm toplogo">
+            <p id="logo">Chía</p>
+          </div>
+      </nav>
+      <div class="slogan">
+        <p>"Un exterior saludable inicia desde el interior"</p>
+      </div>
+  </div>
+  <div class="block">
+    <div class="block-element">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#contact">
+              <img class="d-block w-100" src="imgs/bolson.jpg" alt="Bolsones Organicos" id="first">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Bolsones Orgánico</h2>
+              <h5>Contamos con la mayor variedad de verduras de origen orgánico y sin agrotóxicos, harinas, mermeladas y más!</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#contact">
+              <img class="d-block w-100" src="imgs/cursoweb.jpg" alt="Cursos Online" id="second">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Cursos Online</h2>
+              <h5>Sabemos lo dificil que puede ser cambiar hábitos, sobretodo en la cocina. Con nuestros cursos online aprenderás las mejores recetas y como organizarte en tu cocina</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#contact">
+              <img class="d-block w-100" src="imgs/cultivos.jpg" alt="Cultivos">
+            </a>				
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Talleres de Cultivo</h2>
+              <h5>Si sos de esas personas que quieren deleitarse con sus propios productos, podes anotarte en nuestros talleres de cultivo organico</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>  
+  </div>  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 m-auto">
+        <div class="contact-form" id="contact">
+          <h1>Empieza hoy!</h1>
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputName">Nombre</label>
+                  <input type="text" class="form-control" id="inputName" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" placeholder="Ejemplo@gmail.com" id="inputEmail" required>
+                </div>
+              </div>
+            </div>            
+            <div class="form-group">
+              <label for="inputSubject">Tema</label>
+              <input type="text" class="form-control" placeholder="Sobre que quieres preguntarnos?" id="inputSubject" required>
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Mensaje</label>
+              <textarea class="form-control" id="inputMessage" placeholder="Envianos tu mensaje" rows="5" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-success"><i class="fa fa-paper-plane"></i>Enviar</button>
+            </div>            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+</body>
+
+</html>

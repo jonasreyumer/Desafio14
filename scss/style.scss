@@ -1,0 +1,121 @@
+$bebas: 'Bebas Neue', cursive;
+body {
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("imgs/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.navbar {
+    padding: 0;
+    .row {
+        width: 100%;
+        .toplogo {
+            font-family: $bebas;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            color: #232727;  
+            width: 100%;
+            text-align: center;
+            #logo { 
+                font-weight: 500;
+                font-size: 100px;
+                padding: 0; margin: 0;
+            }
+        }
+    }
+}
+.slogan {
+   color: #232727;
+   font-family: $bebas;
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 20px;
+   font-size: 50px;
+}
+.block {
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    .block-element {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 457px;
+            object-fit: cover;
+        }
+    }
+}
+.carousel {
+    width: 70%;
+}
+.carousel-caption {
+    font-family: 'Baloo Tammudu 2', cursive;
+    background-color: #5bd165;
+}
+.contact-form {
+    padding: 50px;
+    margin: 30px auto;
+    h1 {
+        font-size: 42px;
+        font-family: 'Pacifico', sans-serif;
+        margin: 0 0 50px;
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .form-control {
+        border-color: greenyellow;
+        
+        &:focus {
+            border-color: greenyellow;
+            box-shadow: 0 0 8px greenyellow;
+        }
+    }
+    .btn-success {
+        min-width: 250px;
+        color: white;
+        margin-top: 20px;
+        border: none;
+        &:hover {
+            color: black; 
+        }
+        i {
+            margin-right: 5px;
+        }
+    }
+    label {
+        opacity: 0.9;
+    }
+    textarea {
+        resize: vertical;
+    }
+}	
+
+@media (max-width: 600px) and (min-width: 300px) {
+   #logo {
+       font-size: 40px;
+   }
+   .slogan {
+       font-size: 30px;
+   }
+}
